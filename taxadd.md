@@ -1,12 +1,5 @@
-lineup = [
-    ("The Wailers", "reggae", 45),
-    ("Daft Punk", "electronic", 90),
-    ("Adele", "pop", 60),
-    ("Metallica", "metal", 100),]
+def add_tax(price):
+  return price * 1.08
 
-for act in lineup:
-  band, genre, minutes = act
-  if minutes >= 90: 
-    print(f"{band} ({genra}) plays a long set: {minutes} minutes")
-  else: 
-    print(f"{band} ({genre}) plays {minutes} minutes")
+total = add_tax(50)
+print(f"With, tax, that comes to ${total}")
